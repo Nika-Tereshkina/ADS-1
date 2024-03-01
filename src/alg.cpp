@@ -13,18 +13,17 @@ return false;
     }
     return true;
 }
-}
 uint64_t nPrime(uint64_t n) {
 // вставьте код функции
   uint64_t idx = 0;
   uint64_t cur_p = 2;
     while (idx < n) {
         cur_p++;
-        if (checkPrime(cur_p))
+        if (checkPrime(cur_p)) {
             idx++;
-        cur_p++;
         }
-    return cur_p-1; 
+    }
+return cur_p;                                                                                                                                                                                                                                                          
 }          
 uint64_t nextPrime(uint64_t value) {
   value++;
